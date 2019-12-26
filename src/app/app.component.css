@@ -1,3 +1,7 @@
-.navbar-brand{
+.navbar{
     background-color: pink;
+}
+
+.navbar-brand{
+    background-color: white;
 }
