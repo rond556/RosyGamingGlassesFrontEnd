@@ -9,3 +9,26 @@
     border-color: plum;
     border-style: solid;
 }
+
+.opacity {
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+  }
+
+.menuoptions a {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+.menuoptions a:visited, a:link {
+    color: #334953;
+  }
+.menuoptions a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+.menuoptions a.active {
+    color: #039be5;
+  }

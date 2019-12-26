@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    filter: opacity(50);
+}
