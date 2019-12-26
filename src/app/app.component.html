@@ -1,15 +1,13 @@
 
     <nav class="navbar navbar-light">
       <a class="navbar-brand" href="#">
-        <img class="youflixlogo" src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/RosyGamingLogo.png?raw=true">
+        <img class="rosygaminglasseslogo" src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/RosyGamingLogo.png?raw=true">
       </a>
-      <nav class="navbar navbar-light bg-dark">
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </nav>
+        <a class="profile-link" href="/profile">
+      <img class="profilelink" src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Lucca%20-%20Status.gif?raw=true">
+      </a>  
     </nav>
+
     <nav class="navbar navbar-light bg-light">
       <form class="menuoptions">
         <a id="10" routerLink="/home">When You Were Ten</a>
@@ -18,6 +16,14 @@
         <a id="13" routerLink="/user">When You Were Thirteen</a>
         <a id="14" routerLink="/user">When You Were Fourteen</a>
       </form>
+
+      <nav class="navbar-search">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
     </nav>
+    
 
     <router-outlet></router-outlet>

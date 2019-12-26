@@ -1,6 +1,13 @@
-body {
-    background-image: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
+body::after {
+    content: "";
+    background: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
     background-repeat: no-repeat, repeat;
-    background-size: cover;
-    filter: opacity(50);
-}
+    background-size: cover;   
+  }
