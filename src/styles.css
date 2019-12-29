@@ -1,3 +1,9 @@
+body{
+  background-image: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
+  background-size: cover;
+  background-position: fixed;
+}
+
 body::before {
     content: "";
     background: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
