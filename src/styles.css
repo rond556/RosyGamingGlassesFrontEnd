@@ -3,17 +3,3 @@ body{
   background-size: cover;
   background-position: fixed;
 }
-
-body::before {
-    content: "";
-    background: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    background-attachment: fixed;
-    background-size: cover;
-  }
