@@ -8,6 +8,7 @@ import { ThirteenyearsoldComponent } from './thirteenyearsold/thirteenyearsold.c
 import { FourteenyearsoldComponent } from './fourteenyearsold/fourteenyearsold.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
+import { CustomageComponent } from './customage/customage.component';
 
 const routes: Routes = [ 
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'thirteenyearsold', component: ThirteenyearsoldComponent},
   { path: 'fourteenyearsold', component: FourteenyearsoldComponent},
   { path: 'user', component: UserComponent},
-  { path: 'home', component: HomeComponent}
+  { path: 'home', component: HomeComponent},
+  { path: 'customage', component: CustomageComponent}
 ];
 
 @NgModule({

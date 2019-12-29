@@ -35,15 +35,10 @@
     
 }
 
-.releasedateleft{
+.leftcolumn{
     float: left;
 }
 
-.releasedateright{
+.rightcolumn{
     float: right;
-}
-
-.mat-card-actions:hover .container{
-    display: none;
-
 }

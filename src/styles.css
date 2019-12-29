@@ -1,4 +1,4 @@
-body::after {
+body::before {
     content: "";
     background: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Background.png?raw=true");
     opacity: 0.2;
@@ -8,7 +8,6 @@ body::after {
     right: 0;
     position: absolute;
     z-index: -1;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;   
+    background-size: cover;
   }
