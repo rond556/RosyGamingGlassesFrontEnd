@@ -10,7 +10,7 @@
     border-style: solid;
 }
 
-.profile-link{
+.user-link{
     background-color: white;
     border-radius: 25px;
     padding: 10px;
@@ -24,6 +24,10 @@
     display: inline-block;
     background-image: #eee;
     border-radius: 4px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
   }
 
 .menuoptions a:visited, a:link {
