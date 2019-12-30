@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-gamecard',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GamecardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
