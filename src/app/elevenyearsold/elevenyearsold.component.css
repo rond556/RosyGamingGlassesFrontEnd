@@ -2,19 +2,21 @@
     background-color: pink;
     border-radius: 25px;
     border-color: palevioletred;
-    padding-left: 5px;
     border-style: solid;
-    max-width: 400px;
+    max-width: 300px;
     box-shadow: 10px 10px grey;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     opacity: 0.5;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .gamecard:hover {
-    max-width: 450px;
+    max-width: 325px;
     box-shadow: 0px 0px 60px 30px palevioletred;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -42,3 +44,7 @@
 .rightcolumn{
     float: right;
 }
+
+.container {
+    justify-content: space-evenly;
+  }
