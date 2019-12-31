@@ -5,20 +5,20 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from "@angular/flex-layout"
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameService } from './game.service';
-import { UserService } from './user.service';
 
 import { TenyearsoldComponent } from './tenyearsold/tenyearsold.component';
 import { ElevenyearsoldComponent } from './elevenyearsold/elevenyearsold.component';
 import { TwelveyearsoldComponent } from './twelveyearsold/twelveyearsold.component';
 import { ThirteenyearsoldComponent } from './thirteenyearsold/thirteenyearsold.component';
 import { FourteenyearsoldComponent } from './fourteenyearsold/fourteenyearsold.component';
-import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { CustomageComponent } from './customage/customage.component';
 import { GamecardComponent } from './gamecard/gamecard.component';
+import { UserpageComponent } from './userpage/userpage.component';
 
 
 @NgModule({
@@ -29,19 +29,19 @@ import { GamecardComponent } from './gamecard/gamecard.component';
     TwelveyearsoldComponent,
     ThirteenyearsoldComponent,
     FourteenyearsoldComponent,
-    UserComponent,
     HomeComponent,
     CustomageComponent,
     GamecardComponent,
+    UserpageComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
+    HttpClientModule,
     MatCardModule,
     FlexLayoutModule
   ],
-  providers: [GameService, UserService],
+  providers: [GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

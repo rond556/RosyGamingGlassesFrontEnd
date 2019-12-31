@@ -3,7 +3,7 @@
       <a class="navbar-brand" href="#">
         <img class="rosygaminglasseslogo" src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/RosyGamingLogo.png?raw=true">
       </a>
-        <a class="user-link" href="/user">
+        <a class="user-link" href="/userpage">
       <img class="userlink" src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Lucca%20-%20Status.png?raw=true">
       </a>  
     </nav>
@@ -28,4 +28,8 @@
     </nav>
     
 
-    <router-outlet></router-outlet>
+    <router-outlet>
+      <li  *ngFor="let result of this.response">
+        {{GamecardComponent.parseGame(result)}}
+      </li>
+    </router-outlet>

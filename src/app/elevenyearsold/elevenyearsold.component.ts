@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { GamecardComponent } from '../gamecard/gamecard.component';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -9,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElevenyearsoldComponent implements OnInit {
 
-  constructor() { }
+  response: any;
+  
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
-
 }

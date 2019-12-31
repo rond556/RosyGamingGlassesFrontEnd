@@ -2,17 +2,17 @@
     <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Chrono Trigger</mat-card-title>
-          <mat-card-subtitle>Square Enix - RPG</mat-card-subtitle>
+          <mat-card-title>{{game.title}}</mat-card-title>
+          <mat-card-subtitle>{{game.publisher}}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="https://i.ytimg.com/vi/hdWTrxJo28M/maxresdefault.jpg" alt="Chrono Trigger image">
+        <img mat-card-image src={{image}} alt="header image">
         <mat-card-content>
           <div>
             <div class="leftcolumn">
-              Release date:
+              Release date: 
             </div>
             <div class="rightcolumn">
-              March 11, 1995
+              {{game.date}}
             </div>
           </div>
         </mat-card-content>

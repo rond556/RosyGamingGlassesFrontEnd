@@ -1,8 +1,8 @@
 export class Game{
     id: number;
     title: string;
+    slug: string;
     released: string;
     publisher: string;
-    short_screenshots: Array<any>;
-    genres: Array<String>;
+    image: string;
 }

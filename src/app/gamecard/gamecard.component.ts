@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { Game } from 'src/models/Game';
 
 @Component({
   selector: 'app-gamecard',
@@ -7,10 +8,20 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
   styleUrls: ['./gamecard.component.css']
 })
 export class GamecardComponent implements OnInit {
+  game: Game;
+  response: any;
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit() {
+  ngOnInit() { 
+  }
+
+  parseGame(result) {
+    this.game = new Game();
+    this.game.title = result.name;
+    this.game.publisher = result.publisher;
+    this.game.released = result.released;
+    this.game.image = result.background_image;
   }
 
 }
