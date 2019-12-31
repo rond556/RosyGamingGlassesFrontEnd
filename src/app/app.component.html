@@ -29,7 +29,34 @@
     
 
     <router-outlet>
+      <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap="wrap">
       <li  *ngFor="let result of this.response">
-        {{GamecardComponent.parseGame(result)}}
+        <div class="gamecard">
+          <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{result.name}}</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src={{result.background_image}} alt="header image">
+              <mat-card-content>
+                <div>
+                  <div class="leftcolumn">
+                    Release date: 
+                  </div>
+                  <div class="rightcolumn">
+                    {{result.released}}
+                  </div>
+                </div>
+              </mat-card-content>
+              <mat-card-actions>
+                <div>
+                <button mat-button>MY FAVES</button>
+                <button mat-button>WISHLIST</button>
+              </div>
+              </mat-card-actions>
+            </mat-card>
+          </div>
       </li>
+      </div>
     </router-outlet>

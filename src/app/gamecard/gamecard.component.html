@@ -2,17 +2,17 @@
     <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{game.title}}</mat-card-title>
-          <mat-card-subtitle>{{game.publisher}}</mat-card-subtitle>
+          <mat-card-title>{{gamecard.title}}</mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src={{image}} alt="header image">
+        <img mat-card-image src={{gamecard.image}} alt="header image">
         <mat-card-content>
           <div>
             <div class="leftcolumn">
               Release date: 
             </div>
             <div class="rightcolumn">
-              {{game.date}}
+              {{gamecard.releasedate}}
             </div>
           </div>
         </mat-card-content>

@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { GamecardComponent } from 'src/app/gamecard/gamecard.component';
 import { HttpClient } from '@angular/common/http';
-import { jsonpFactory } from '@angular/http/src/http_module';
-import { Game } from 'src/models/Game';
-import { Observable } from 'rxjs';
-import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +10,7 @@ import { NgForOf } from '@angular/common';
 export class AppComponent {
   gamecard: GamecardComponent;
   response: any;
+  gamecards: GamecardComponent[] = [];
 
   constructor(private http: HttpClient) {
   }
@@ -26,9 +23,11 @@ export class AppComponent {
         console.log(this.response);
 
         
-        this.response.forEach(element => {console.log(element.name)
+        this.response.forEach(element => {
+          this.gamecard = new GamecardComponent(element.id, element.name, element.released, element.background_image);
+          this.gamecards.push(this.gamecard);
         });
-          
+          console.log(this.gamecards);
         });
       }
   }
