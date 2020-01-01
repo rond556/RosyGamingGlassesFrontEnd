@@ -18,25 +18,28 @@
     border-style: solid;
 }
 
-.menuoptions a {
+.yearbutton {
     padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
     background-image: #eee;
-    border-radius: 4px;
+    border-radius: 8px;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
+    border: 0;
+    background: none;
+    box-shadow: none;
   }
 
-.menuoptions a:visited, a:link {
+.yearbutton:visited, a:link {
     color: #334953;
   }
 
-.menuoptions a:hover {
-    background-image: url("https://i.pinimg.com/originals/36/a3/cf/36a3cffbccd05e21336c4e418fe3d0e4.gif");
-    color: palevioletred;
+.yearbutton:hover {
+  background-image: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Hearts%20falling.gif?raw=true");
+  color: palevioletred;
   text-shadow:10px 10px 30px plum;
   box-shadow: 0px 0px 60px 30px palevioletred;
   -moz-transition: all 0.2s ease-in;
@@ -54,7 +57,7 @@
     border-radius: 25px;
     border-color: palevioletred;
     border-style: solid;
-    max-width: 350px;
+    width: 350px;
     height: 400px;
     box-shadow: 10px 10px grey;
     -moz-transition: all 0.2s ease-in;
@@ -63,13 +66,13 @@
     transition: all 0.2s ease-in;
     opacity: 0.5;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .gamecard:hover {
+    width: 375px;
+    height:450px;
     box-shadow: 0px 0px 60px 30px palevioletred;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -79,10 +82,12 @@
 }
 
 .mat-card-image{
-    height: 250px;
+    height: 200px;
 }
 
-
+.mat-card-title{
+    white-space: nowrap;
+}
 
 .leftcolumn{
     float: left;
@@ -94,7 +99,6 @@
 
 .container {
     max-width: 1980px;
-    margin: 10 auto;
 }
   .grid-row {
     display: flex;

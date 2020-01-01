@@ -11,7 +11,13 @@ export class GamecardComponent implements OnInit {
   releasedate: string;
   image: string;
 
-  constructor(id: number, title: string, releasedate: string, image: string) { }
+  constructor(id: number, title: string, releasedate: string, image: string) { 
+    this.id=id;
+    this.title=title;
+    this.releasedate=releasedate;
+    this.image=image;
+
+  }
 
   ngOnInit() { 
   }
