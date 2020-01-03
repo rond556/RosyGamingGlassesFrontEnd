@@ -18,7 +18,7 @@
     border-style: solid;
 }
 
-.yearbutton {
+.menuoptions a {
     padding: 5px 10px;
     text-decoration: none;
     display: inline-block;
@@ -33,11 +33,11 @@
     box-shadow: none;
   }
 
-.yearbutton:visited, a:link {
+.menuoptions a:visited, a:link {
     color: #334953;
   }
 
-.yearbutton:hover {
+.menuoptions a:hover {
   background-image: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Hearts%20falling.gif?raw=true");
   color: palevioletred;
   text-shadow:10px 10px 30px plum;

@@ -3,6 +3,9 @@
     <img class="rosygaminglasseslogo"
       src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/RosyGamingLogo.png?raw=true">
   </a>
+  <form>
+  Year of Birth<input type="number" name="birthYear"><br>
+</form>
   <a class="user-link" href="/userpage">
     <img class="userlink"
       src="https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Lucca%20-%20Status.png?raw=true">
@@ -11,14 +14,14 @@
 
 
 <nav class="navbar navbar-light bg-light">
-
-  <button class="yearbutton" onclick="tenYearsOld()">When You Were Ten</button>
-  <button class="yearbutton" onclick="elevenYearsOld()">When You Were Eleven</button>
-  <button class="yearbutton" onclick="twelveYearsOld()">When You Were Twelve</button>
-  <button class="yearbutton" onclick="thirteenYearsOld()">When You Were Thirteen</button>
-  <button class="yearbutton" onclick="fourteenYearsOld()">When You Were Fourteen</button>
-  <button class="yearbutton" onclick="fourteenYearsOld()">Whatever Age You Like</button>
-
+  <form class="menuoptions">
+    <a routerLink="/tenyearsold">When You Were Ten</a>
+    <a routerLink="/elevenyearsold">When You Were Eleven</a>
+    <a routerLink="/twelveyearsold">When You Were Twelve</a>
+    <a routerLink="/thirteenyearsold">When You Were Thirteen</a>
+    <a routerLink="/fourteenyearsold">When You Were Fourteen</a>
+    <a routerLink="/customage">Whatever Age You Like</a>
+  </form>
 
 
   <nav class="navbar-search">
@@ -29,7 +32,7 @@
   </nav>
 </nav>
 
-
+<router-outlet></router-outlet>
 
 
 <div id="cardgrid" class="container">

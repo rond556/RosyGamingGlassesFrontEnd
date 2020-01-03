@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GamecardComponent implements OnInit {
   id: number;
+  metacritic: number;
   title: string;
   releasedate: string;
   image: string;
@@ -16,7 +17,6 @@ export class GamecardComponent implements OnInit {
     this.title=title;
     this.releasedate=releasedate;
     this.image=image;
-
   }
 
   ngOnInit() { 

@@ -9,14 +9,17 @@ import { AgGridModule } from 'ag-grid-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GameService } from './game.service';
 
 
 import { HomeComponent } from './home/home.component';
 import { CustomageComponent } from './customage/customage.component';
 import { GamecardComponent } from './gamecard/gamecard.component';
 import { UserpageComponent } from './userpage/userpage.component';
-
+import { TenyearsoldComponent } from './tenyearsold/tenyearsold.component';
+import { ElevenyearsoldComponent } from './elevenyearsold/elevenyearsold.component';
+import { TwelveyearsoldComponent } from './twelveyearsold/twelveyearsold.component';
+import { ThirteenyearsoldComponent } from './thirteenyearsold/thirteenyearsold.component';
+import { FourteenyearsoldComponent } from './fourteenyearsold/fourteenyearsold.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,11 @@ import { UserpageComponent } from './userpage/userpage.component';
     CustomageComponent,
     GamecardComponent,
     UserpageComponent,
+    TenyearsoldComponent,
+    ElevenyearsoldComponent,
+    TwelveyearsoldComponent,
+    ThirteenyearsoldComponent,
+    FourteenyearsoldComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +42,7 @@ import { UserpageComponent } from './userpage/userpage.component';
     FlexLayoutModule,
     AgGridModule.withComponents([])
   ],
-  providers: [GameService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
