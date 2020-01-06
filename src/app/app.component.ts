@@ -12,6 +12,7 @@ export class AppComponent {
   gamecard: GamecardComponent;
   response: any;
   gamecards: GamecardComponent[] = [];
+  
 
   constructor(private http: HttpClient) {
   }
@@ -19,4 +20,6 @@ export class AppComponent {
 
   ngOnInit() {
   }
+
+
 }

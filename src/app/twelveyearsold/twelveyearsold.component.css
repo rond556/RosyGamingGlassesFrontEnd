@@ -3,7 +3,7 @@
     border-radius: 25px;
     border-color: palevioletred;
     border-style: solid;
-    width: 325px;
+    width: 350px;
     height: 400px;
     box-shadow: 10px 10px grey;
     -moz-transition: all 0.2s ease-in;
@@ -17,8 +17,7 @@
 }
 
 .gamecard:hover {
-    width:335px;
-    height:415px;
+    width:355px;
     box-shadow: 0px 0px 60px 30px palevioletred;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -42,5 +41,5 @@
   .grid-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }

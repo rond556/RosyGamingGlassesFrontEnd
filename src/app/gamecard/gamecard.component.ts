@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-gamecard',
@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GamecardComponent implements OnInit {
   id: number;
-  metacritic: number;
   title: string;
   releasedate: string;
   image: string;
+  @Input() result: GamecardComponent;
 
   constructor(id: number, title: string, releasedate: string, image: string) { 
     this.id=id;

@@ -1,32 +1,26 @@
-<div id="cardgrid" class="container">
-  <div class="grid-row">
-    <div *ngFor="let result of this.response">
-      <div class="gamecard">
-        <mat-card class="game-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{result.name}}</mat-card-title>
-            <mat-card-subtitle></mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src={{result.background_image}} alt="header image">
-          <mat-card-content>
-            <div class="releasedate">
-              <div class="leftcolumn">
-                Release date:
-              </div>
-              <div class="rightcolumn">
-                {{result.released}}
-              </div>
-            </div>
-          </mat-card-content>
-          <mat-card-actions>
-            <div>
-              <button mat-button>MY FAVES</button>
-              <button mat-button>WISHLIST</button>
-            </div>
-          </mat-card-actions>
-        </mat-card>
+<div class="gamecards">
+  <mat-card class="game-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{result.name}}</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{result.background_image}} alt="header image">
+    <mat-card-content>
+      <div class="releasedate">
+        <div class="leftcolumn">
+          Release date:
+        </div>
+        <div class="rightcolumn">
+          {{result.released}}
+        </div>
       </div>
-    </div>
-  </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <div>
+        <button mat-button>MY FAVES</button>
+        <button mat-button>WISHLIST</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
 </div>

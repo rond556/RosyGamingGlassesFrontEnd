@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./elevenyearsold.component.css']
 })
 export class ElevenyearsoldComponent implements OnInit {
-  gamecard: GamecardComponent;
   response: any;
+  gamecard: GamecardComponent;
   gamecards: GamecardComponent[] = [];
 
   constructor(private http: HttpClient) { }
