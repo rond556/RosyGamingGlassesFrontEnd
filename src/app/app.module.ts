@@ -13,13 +13,8 @@ import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
 import { CustomageComponent } from './customage/customage.component';
-import { GamecardComponent } from './gamecard/gamecard.component';
 import { UserpageComponent } from './userpage/userpage.component';
-import { TenyearsoldComponent } from './tenyearsold/tenyearsold.component';
-import { ElevenyearsoldComponent } from './elevenyearsold/elevenyearsold.component';
-import { TwelveyearsoldComponent } from './twelveyearsold/twelveyearsold.component';
-import { ThirteenyearsoldComponent } from './thirteenyearsold/thirteenyearsold.component';
-import { FourteenyearsoldComponent } from './fourteenyearsold/fourteenyearsold.component';
+import { GameDisplayComponent } from './game-display/game-display.component';
 
 
 @NgModule({
@@ -27,13 +22,8 @@ import { FourteenyearsoldComponent } from './fourteenyearsold/fourteenyearsold.c
     AppComponent,
     HomeComponent,
     CustomageComponent,
-    GamecardComponent,
     UserpageComponent,
-    TenyearsoldComponent,
-    ElevenyearsoldComponent,
-    TwelveyearsoldComponent,
-    ThirteenyearsoldComponent,
-    FourteenyearsoldComponent,
+    GameDisplayComponent,
   ],
   imports: [
     BrowserModule,

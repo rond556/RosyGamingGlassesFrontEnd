@@ -9,58 +9,6 @@
   </a>
 </nav>
 
-
-<nav class="navbar navbar-light bg-light">
-  <form class="menuoptions">
-    <a routerLink="/tenyearsold">When You Were Ten</a>
-    <a routerLink="/elevenyearsold">When You Were Eleven</a>
-    <a routerLink="/twelveyearsold">When You Were Twelve</a>
-    <a routerLink="/thirteenyearsold">When You Were Thirteen</a>
-    <a routerLink="/fourteenyearsold">When You Were Fourteen</a>
-    <a routerLink="/customage">Whatever Age You Like</a>
-  </form>
-
-
-  <nav class="navbar-search">
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </nav>
-</nav>
+<app-game-display></app-game-display>
 
 <router-outlet></router-outlet>
-
-
-<div id="cardgrid" class="container">
-  <div class="grid-row">
-    <div *ngFor="let result of this.response">
-      <div class="gamecard">
-        <mat-card class="game-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{result.name}}</mat-card-title>
-            <mat-card-subtitle></mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src={{result.background_image}} alt="header image">
-          <mat-card-content>
-            <div>
-              <div class="leftcolumn">
-                Release date:
-              </div>
-              <div class="rightcolumn">
-                {{result.released}}
-              </div>
-            </div>
-          </mat-card-content>
-          <mat-card-actions>
-            <div>
-              <button mat-button>MY FAVES</button>
-              <button mat-button>WISHLIST</button>
-            </div>
-          </mat-card-actions>
-        </mat-card>
-      </div>
-    </div>
-  </div>
-</div>

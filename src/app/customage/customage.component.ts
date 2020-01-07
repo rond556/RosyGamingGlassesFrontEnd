@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import { GamecardComponent } from 'src/app/gamecard/gamecard.component';
 import { HttpClient } from '@angular/common/http';
+import { Game } from 'src/models/game';
 
 @Component({
   selector: 'app-customage',
@@ -9,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./customage.component.css']
 })
 export class CustomageComponent implements OnInit {
-  gamecard: GamecardComponent;
+  game: Game;
   response: any;
-  gamecards: GamecardComponent[] = [];
+  games: Game[] = [];
 
   constructor(private http: HttpClient) { }
 
@@ -22,10 +21,9 @@ export class CustomageComponent implements OnInit {
 
 
         this.response.forEach(element => {
-          this.gamecard = new GamecardComponent(element.id, element.name, element.released, element.background_image);
-          this.gamecards.push(this.gamecard);
+          this.game = new Game(element.id, element.name, element.released, element.background_image);
+          this.games.push(this.game);
         });
-        console.log(this.response);
       });
   }
 
