@@ -14,14 +14,14 @@ import { AuthService } from '../services/auth.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted  =  false;
-  images: string[] = ['https://66.media.tumblr.com/35db5c6171e2719e50dc5d7a463b9080/tumblr_nlf3znNNzk1qd4q8ao1_400.gifv',
-  'https://media0.giphy.com/media/yiQFNwgSBg7As/giphy.gif',
-  'https://thumbs.gfycat.com/GreatRadiantAfricanharrierhawk-small.gif',
-    'https://media.giphy.com/media/ffg29DALNz0Pe/giphy.gif',
-  'https://i.pinimg.com/originals/30/82/64/30826422f487abb4b550ffdb1a0403ee.gif'];
+  images: string[] = ['https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/bioniccommando.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/chronotrigger.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/demonscrest.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/finalfantasyvi.gif?raw=true',,
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/guardianheroes.gif?raw=true'];
 
 
-  currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
+  currentBackground = this.images[Math.floor(Math.random() * this.images.length - 1)];
 
   constructor(private authService: AuthService, private router: Router, private formBuilder: FormBuilder ) { }
 
@@ -50,7 +50,7 @@ login(){
 changeImage() {
 
   this.currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
-  
+  console.log(this.currentBackground)
  }
 
  
