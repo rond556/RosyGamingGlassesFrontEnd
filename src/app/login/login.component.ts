@@ -17,8 +17,25 @@ export class LoginComponent implements OnInit {
   images: string[] = ['https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/bioniccommando.gif?raw=true',
 'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/chronotrigger.gif?raw=true',
 'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/demonscrest.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/finalfantasyvi.gif?raw=true',,
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/guardianheroes.gif?raw=true'];
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/finalfantasyvi.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/guardianheroes.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/wakuwaku7.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/hyperlightdrifter.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/marvelvscapcom2.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/megaman2.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/megamanlegends.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/metalslug.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/monkeyisland.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/mrgimmick.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/popfulmail.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/rondoofblood.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/secretofmana.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/shovelknight.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/suikoden2.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/supermario64.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/supermariorpg.gif?raw=true',
+'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/supermetroid.gif?raw=true'
+];
 
 
   currentBackground = this.images[Math.floor(Math.random() * this.images.length - 1)];
@@ -49,7 +66,7 @@ login(){
 
 changeImage() {
 
-  this.currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
+  this.currentBackground = this.images[Math.floor(Math.random() * this.images.length - 1)];
   console.log(this.currentBackground)
  }
 
