@@ -2,7 +2,7 @@
     padding: 5px 10px;
     font-size: x-large;
     font-weight: bolder;
-    color: palevioletred;
+    color: plum;
     text-decoration: none;
     display: inline-block;
     background-image: #eee;
@@ -22,7 +22,7 @@
 
 .agebuttons:hover {
   background-image: url("https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/Hearts%20falling.gif?raw=true");
-  color: plum;
+  color: palevioletred;
   text-shadow:10px 10px 30px plum;
   box-shadow: 0px 0px 60px 30px palevioletred;
   -moz-transition: all 0.2s ease-in;

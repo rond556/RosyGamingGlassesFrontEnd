@@ -18,11 +18,15 @@ export class GameDisplayComponent implements OnInit {
 
 
   constructor(private http: HttpClient, private apicall: ApicallService, ) {
-    this.apicall.getGames(1995).subscribe(games => this.games = games['results']);
+    this.apicall.getGames(1985).subscribe(games => this.games = games['results']);
     
    }
 
   ngOnInit() {
     
   }
+
+  changeAge(year: number){
+    this.apicall.getGames(year).subscribe(games => this.games = games['results']);
+    }
 }

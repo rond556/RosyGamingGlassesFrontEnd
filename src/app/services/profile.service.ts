@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Profile } from '../profile';
-import { Observable } from 'rxjs';
+import { Profile } from '../../models/profile';
 
 
 @Injectable({
@@ -12,14 +11,10 @@ export class ProfileService {
   private profileUrl: string;
 
   constructor(private http: HttpClient) { 
-    this.profileUrl = 'http://localhost:8080/users';
-  }
-
-  public findAll(): Observable<Profile[]> {
-    return this.http.get<Profile[]>(this.profileUrl);
+    this.profileUrl = 'http://localhost:8080/profiles';
   }
  
-  public save(user: Profile) {
-    return this.http.post<Profile>(this.profileUrl, user);
+  register(profile: Profile) {
+    return this.http.post<Profile>(this.profileUrl, profile);
   }
 }

@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from "@angular/flex-layout"
 import { AgGridModule } from 'ag-grid-angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -15,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { CustomageComponent } from './customage/customage.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
+import { ProfileService } from './services/profile.service';
 
 
 @NgModule({
@@ -31,6 +34,7 @@ import { GameDisplayComponent } from './game-display/game-display.component';
     HttpClientModule,
     MatCardModule,
     FlexLayoutModule,
+    BrowserAnimationsModule,
     AgGridModule.withComponents([])
   ],
   providers: [],
