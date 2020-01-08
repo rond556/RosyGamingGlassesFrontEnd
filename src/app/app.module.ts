@@ -1,23 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from "@angular/flex-layout"
 import { AgGridModule } from 'ag-grid-angular';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 
 
 import { HomeComponent } from './home/home.component';
 import { CustomageComponent } from './customage/customage.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
-import { ProfileService } from './services/profile.service';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { ProfileService } from './services/profile.service';
     CustomageComponent,
     UserpageComponent,
     GameDisplayComponent,
+    LoginComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import { ProfileService } from './services/profile.service';
     HttpClientModule,
     MatCardModule,
     FlexLayoutModule,
-    BrowserAnimationsModule,
+    FormsModule, 
+    ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
   providers: [],
