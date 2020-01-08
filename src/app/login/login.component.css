@@ -24,7 +24,6 @@
 .login-header {
   border-radius: 10px;
   background:pink;
-  box-shadow: 0 0 5px 0 salmon;
   padding: 20px;
   font-size: 1.4em;
   font-weight: normal;
@@ -33,12 +32,22 @@
   color: #fff;
 }
 
-.login-container {
+.boxbackground {
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 palevioletred;
-  background: #ebebeb;
+  background-position: center;
   padding: 12px;
+  opacity: .5;
+  animation: glowing 5000ms infinite;
 }
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 40px whitesmoke; }
+  40% { box-shadow: 0 0 80px whitesmoke; }
+  60% { box-shadow: 0 0 1000px whitesmoke; }
+  100% { box-shadow: 0 0 80px whitesmoke; }
+}
+
+
 
 .login p {
   padding: 12px;
@@ -73,10 +82,12 @@
   border-color: transparent;
   color: #fff;
   cursor: pointer;
+  opacity: .5;
 }
 
 .login input[type="submit"]:hover {
   background: #17c;
+  opacity: 1.0;
 }
 
 .login input[type="submit"]:focus {
@@ -87,4 +98,11 @@
 .has-error input[type="password"] {
     border-color: rgb(216, 12, 12);
     color: rgb(230, 14, 14);
+}
+
+.textbox{
+  opacity: .5;
+}
+.textbox:hover{
+  opacity:1.0;
 }

@@ -19,7 +19,6 @@ import { CustomageComponent } from './customage/customage.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
-import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -30,7 +29,6 @@ import { AdminComponent } from './admin/admin.component';
     UserpageComponent,
     GameDisplayComponent,
     LoginComponent,
-    AdminComponent,
   ],
   imports: [
     BrowserModule,

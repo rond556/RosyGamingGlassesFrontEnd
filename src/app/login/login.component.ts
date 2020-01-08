@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from  '@angular/forms';
 import { Router } from  '@angular/router';
 import { AuthService } from '../services/auth.service';
@@ -14,6 +14,14 @@ import { AuthService } from '../services/auth.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted  =  false;
+  images: string[] = ['https://66.media.tumblr.com/35db5c6171e2719e50dc5d7a463b9080/tumblr_nlf3znNNzk1qd4q8ao1_400.gifv',
+  'https://media0.giphy.com/media/yiQFNwgSBg7As/giphy.gif',
+  'https://thumbs.gfycat.com/GreatRadiantAfricanharrierhawk-small.gif',
+    'https://media.giphy.com/media/ffg29DALNz0Pe/giphy.gif',
+  'https://i.pinimg.com/originals/30/82/64/30826422f487abb4b550ffdb1a0403ee.gif'];
+
+
+  currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
 
   constructor(private authService: AuthService, private router: Router, private formBuilder: FormBuilder ) { }
 
@@ -23,6 +31,8 @@ export class LoginComponent implements OnInit {
         email: ['', Validators.required],
         password: ['', Validators.required]
     });
+
+    setInterval(() => { this.changeImage() }, 4000);
 }
 
 get formControls() { return this.loginForm.controls; }
@@ -34,7 +44,16 @@ login(){
     return;
   }
   this.authService.login(this.loginForm.value);
-  this.router.navigateByUrl('/admin');
+  this.router.navigateByUrl('/home');
 }
+
+changeImage() {
+
+  this.currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
+  
+ }
+
+ 
+
 
 }
