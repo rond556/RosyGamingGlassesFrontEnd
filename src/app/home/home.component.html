@@ -1,15 +1,16 @@
-<a routerLink="/game-display">
+
+  Please enter your birthyear:
+    <input class="textbox" type="text" placeholder="Birthyear" name="birthyear" ngmodel="birthyear" size=30 max="2020" min="1900"
+      required>
+  
+  <a routerLink="/game-display" (click)="storeBirthyear(birthyear)" >
     <img class="gamedisplay button"
       src="http://www.videogamesprites.net/FinalFantasy6/Party/Mog/Mog%20-%20Victory%20(Front).gif">
-  
-  Click here to see your games
-  <img class="gamedisplay button"
-      src="http://www.videogamesprites.net/FinalFantasy6/Party/Mog/Mog%20-%20Victory%20(Front).gif">
-</a>
+  </a>
 
-    <div>
-      <button (click)="logout()">
-        Click here to log out!
-      </button>
-    <img  src="http://www.videogamesprites.net/FinalFantasy6/Party/Locke/Locke%20-%20Wave%20(Front).gif">
-  </div>
+<div>
+  <button (click)="logout()">
+    Click here to log out!
+  </button>
+  <img src="http://www.videogamesprites.net/FinalFantasy6/Party/Locke/Locke%20-%20Wave%20(Front).gif">
+</div>

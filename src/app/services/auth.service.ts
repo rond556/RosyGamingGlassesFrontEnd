@@ -5,6 +5,7 @@ import { Profile } from 'src/models/profile';
   providedIn: 'root'
 })
 export class AuthService {
+  birthyear: number;
 
   constructor() { }
 
@@ -19,5 +20,13 @@ export class AuthService {
 
   public logout(){
     localStorage.removeItem('ACCESS_TOKEN');
+  }
+
+  getBirthyear(){
+    return this.birthyear;
+  }
+
+  setBirthyear(birthyear: number){
+    this.birthyear = birthyear;
   }
 }

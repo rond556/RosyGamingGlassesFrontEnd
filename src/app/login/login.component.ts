@@ -14,31 +14,25 @@ import { AuthService } from '../services/auth.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted  =  false;
-  images: string[] = ['https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/bioniccommando.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/chronotrigger.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/demonscrest.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/finalfantasyvi.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/guardianheroes.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/wakuwaku7.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/hyperlightdrifter.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/marvelvscapcom2.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/megaman2.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/megamanlegends.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/metalslug.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/monkeyisland.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/mrgimmick.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/popfulmail.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/rondoofblood.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/secretofmana.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/shovelknight.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/suikoden2.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/supermario64.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/supermariorpg.gif?raw=true',
-'https://github.com/rond556/RosyGamingGlassesFrontEnd/blob/dev/src/assets/loginscreengifs/supermetroid.gif?raw=true'
-];
+  images: string[] = ['https://media.giphy.com/media/AuIu79zI80VVe/giphy.gif',
+'https://media.giphy.com/media/BrV5mGUrn5Li/giphy.gif',
+'https://media.giphy.com/media/kCug4YeBhzxrq/giphy.gif',
+'https://media.giphy.com/media/10H2lNJsW1lOHC/giphy.gif',
+'https://media.giphy.com/media/yiQFNwgSBg7As/giphy.gif',
+'https://media.giphy.com/media/TSKCDXGSBDJks/giphy.gif',
+'https://media.giphy.com/media/RRef9mlH6YiKQ/giphy.gif',
+'https://media.giphy.com/media/BS5dtZMwxWRTq/giphy.gif',
+'https://media.giphy.com/media/AO5qaphTxRnyw/giphy.gif',
+'https://media.giphy.com/media/1ZuJaGQR7sGc9zL8Hh/giphy.gif',
+'https://media.giphy.com/media/zF9gqOiTb95bW/giphy.gif',
+'https://media.giphy.com/media/xRNpHfgk9OeUU/giphy.gif',
+'https://media.giphy.com/media/qzDJ06BW5OQCY/giphy.gif',
+'https://media.giphy.com/media/jFYBRC7NzGrNS/giphy.gif',
+'https://media.giphy.com/media/eRfpAFGHAfcXu/giphy.gif',
+'https://media.giphy.com/media/REgFJcnd2n21O/giphy.gif',
+'https://media.giphy.com/media/DpXqHdILXRRDi/giphy.gif']
 
-
-  currentBackground = this.images[Math.floor(Math.random() * this.images.length - 1)];
+  currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
 
   constructor(private authService: AuthService, private router: Router, private formBuilder: FormBuilder ) { }
 
@@ -66,7 +60,7 @@ login(){
 
 changeImage() {
 
-  this.currentBackground = this.images[Math.floor(Math.random() * this.images.length - 1)];
+  this.currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
   console.log(this.currentBackground)
  }
 

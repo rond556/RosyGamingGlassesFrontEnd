@@ -17,4 +17,8 @@ export class HomeComponent implements OnInit {
     this.authService.logout();
     this.router.navigateByUrl('/login');
   }
+
+  storeBirthyear(birthyear: number){
+    this.authService.setBirthyear(birthyear)
+  }
 }

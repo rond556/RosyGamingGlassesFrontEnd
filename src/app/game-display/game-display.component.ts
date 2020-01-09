@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApicallService } from '../services/apicall.service';
-import { BehaviorSubject, pipe, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Game } from 'src/models/game';
-import { map } from 'rxjs/operators'; 
+import { AuthService } from '../services/auth.service';
 
 
 @Component({
@@ -12,18 +12,19 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./game-display.component.css']
 })
 export class GameDisplayComponent implements OnInit {
+  birthyear: number;
   games: Observable<Game[]>;
   game: Game;
   response: any;
 
 
-  constructor(private http: HttpClient, private apicall: ApicallService, ) {
+  constructor(private http: HttpClient, private apicall: ApicallService, private authService: AuthService) {
     this.apicall.getGames(1985).subscribe(games => this.games = games['results']);
-    
    }
 
   ngOnInit() {
-    
+    this.birthyear = this.authService.getBirthyear()
+
   }
 
   changeAge(year: number){
