@@ -15,7 +15,6 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 import { HomeComponent } from './home/home.component';
-import { CustomageComponent } from './customage/customage.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
@@ -25,7 +24,6 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CustomageComponent,
     UserpageComponent,
     GameDisplayComponent,
     LoginComponent,

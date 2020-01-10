@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
+  birthyear: number;
   
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private forms: FormsModule, private router: Router) { }
 
   ngOnInit() {
   }
@@ -18,7 +20,7 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
-  storeBirthyear(birthyear: number){
-    this.authService.setBirthyear(birthyear)
+  storeBirthyear(year: number){
+    this.authService.setBirthyear(year);
   }
 }
