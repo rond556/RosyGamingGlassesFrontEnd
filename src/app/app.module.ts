@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { LoginComponent } from './login/login.component';
     UserpageComponent,
     GameDisplayComponent,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

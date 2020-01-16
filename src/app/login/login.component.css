@@ -31,6 +31,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  justify-content: center;
 }
 
 .boxbackground {
@@ -99,4 +100,19 @@
 }
 .textbox:hover{
   opacity:1.0;
+}
+
+.registerbutton{
+  text-align: center;
+  padding: 5px;
+  background: rgb(1, 29, 51);
+  border-color: transparent;
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.registerbutton:hover{
+  background: #17c;
+  opacity: 1.0;
 }
