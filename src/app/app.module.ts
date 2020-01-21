@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from "@angular/flex-layout"
 import { AgGridModule } from 'ag-grid-angular';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -14,11 +15,13 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
+
 import { HomeComponent } from './home/home.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { GamemodalComponent } from './gamemodal/gamemodal.component';
 
 
 @NgModule({
@@ -29,6 +32,7 @@ import { RegisterComponent } from './register/register.component';
     GameDisplayComponent,
     LoginComponent,
     RegisterComponent,
+    GamemodalComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +42,11 @@ import { RegisterComponent } from './register/register.component';
     FlexLayoutModule,
     FormsModule, 
     ReactiveFormsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    NgbModule
   ],
   providers: [],
+  entryComponents: [GamemodalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

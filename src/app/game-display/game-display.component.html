@@ -9,14 +9,16 @@
 <div id="cardgrid" class="container">
     <div class="grid-row">
       <div *ngFor="let game of games">
+        
         <div class="gamecard">
           <mat-card class="game-card">
             <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
               <mat-card-title>{{game.name}}</mat-card-title>
               <mat-card-subtitle></mat-card-subtitle>
             </mat-card-header>
+            <button class="btn btn-link" (click)="open(game.id)">
             <img mat-card-image src={{game.background_image}} alt="header image">
+          </button>
             <mat-card-content>
               <div class="releasedate">
                 <div class="leftcolumn">

@@ -1,0 +1,16 @@
+<div class="gameModal">
+<div class="modal-header">
+    <h4 class="modal-title">{{game.name}}</h4>
+      <span aria-hidden="true">&times;</span>
+  </div>
+  <div class="modal-body">
+    <img id="headerImage" src={{game.background_image}} alt="header image">
+    <p>Release date: {{game.released}}</p>
+    <p>Metacritic score: {{game.metacritic}}</p>
+    <div innerHTML="{{game.description}}"></div>
+  </div>
+  <div class="modal-footer">
+    Powered by 
+    <a href="https://rawg.io/" target="_blank">RAWG Video Game Database</a>
+  </div>
+</div>

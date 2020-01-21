@@ -50,7 +50,13 @@ export class LoginComponent implements OnInit {
   'https://media.giphy.com/media/6UDorPg1oGRQ4/giphy.gif',
   'https://media.giphy.com/media/yiBt9PZKrwg0g/giphy.gif',
   'https://media.giphy.com/media/jneiA7ImMXF6/giphy.gif',
-  'https://media.giphy.com/media/3o6EQaAxwqYByiZXIQ/giphy.gif'];
+  'https://media.giphy.com/media/3o6EQaAxwqYByiZXIQ/giphy.gif',
+  'https://media.giphy.com/media/1vZ6QcjgF2iARTj4BE/giphy.gif',
+'https://media.giphy.com/media/pcKpMur7aAYMCs7WQX/giphy.gif',
+'https://media.giphy.com/media/f4JcszAA6d0c39QeUC/giphy.gif',
+'https://media.giphy.com/media/slvREYowfwgo0/giphy.gif',
+'https://media.giphy.com/media/CYFzxzmE2oDkI/giphy.gif',
+'https://media.giphy.com/media/l11R93B7B4CCA/giphy.gif'];
 
   currentBackground = this.images[Math.floor(Math.random() * this.images.length)];
 

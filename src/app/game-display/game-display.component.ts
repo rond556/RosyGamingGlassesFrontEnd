@@ -4,6 +4,10 @@ import { ApicallService } from '../services/apicall.service';
 import { Observable } from 'rxjs';
 import { Game } from 'src/models/game';
 import { AuthService } from '../services/auth.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { GamemodalComponent } from '../gamemodal/gamemodal.component';
+import { GamemodalService } from '../services/gamemodal.service';
+
 
 
 @Component({
@@ -18,9 +22,14 @@ export class GameDisplayComponent implements OnInit {
   response: any;
 
 
-  constructor(private http: HttpClient, private apicall: ApicallService, private authService: AuthService) {
+  constructor(private http: HttpClient,
+    private apicall: ApicallService,
+    private authService: AuthService,
+    private modalService: NgbModal,
+    private gameModalService: GamemodalService) {
     this.apicall.getGames(this.authService.getBirthyear()).subscribe(games => this.games = games['results']);
-   }
+   
+  }
 
   ngOnInit() {
     this.birthyear = this.authService.getBirthyear()
@@ -30,4 +39,10 @@ export class GameDisplayComponent implements OnInit {
   changeAge(year: number){
     this.apicall.getGames(year).subscribe(games => this.games = games['results']);
     }
+
+  open(gameId: number){
+    this.gameModalService.setGameId(gameId);
+    this.modalService.open(GamemodalComponent);
+  }
 }
+
