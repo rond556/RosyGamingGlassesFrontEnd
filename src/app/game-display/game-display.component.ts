@@ -19,7 +19,6 @@ export class GameDisplayComponent implements OnInit {
   birthyear: number;
   games: Observable<Game[]>;
   game: Game;
-  response: any;
 
 
   constructor(private http: HttpClient,

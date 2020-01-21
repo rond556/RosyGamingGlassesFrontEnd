@@ -8,6 +8,12 @@
     <p>Release date: {{game.released}}</p>
     <p>Metacritic score: {{game.metacritic}}</p>
     <div innerHTML="{{game.description}}"></div>
+    <h4>Similar Games</h4>
+    <div *ngFor="let similarGame of similarGames">
+      <h5>{{similarGame.name}}</h5>
+      <button class="btn btn-link" (click)="close();open(similarGame.id)">
+      <img id="similarGameImage" src={{similarGame.background_image}} alt="similar game image"></button>
+  </div>
   </div>
   <div class="modal-footer">
     Powered by 
