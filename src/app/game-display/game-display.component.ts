@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ApicallService } from '../services/apicall.service';
 import { Observable } from 'rxjs';
-import { Game } from 'src/models/game';
-import { AuthService } from '../services/auth.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { GamemodalComponent } from '../gamemodal/gamemodal.component';
 import { GamemodalService } from '../services/gamemodal.service';
+import { Game } from 'src/models/game';
+import { ApicallService } from '../services/apicall.service';
+import { AuthService } from '../services/auth.service';
 
 
 

@@ -1,8 +1,8 @@
 
 
-  <div class="login">
+  <div class="login" [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}" >
     <h2 class="login-header">Login</h2>
-    <div class= "boxbackground" [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}" >
+    <div class= "boxbackground" >
     <form [formGroup]="loginForm" class="login-container" id="loginbox" (ngSubmit)="login()"  >
   
       <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
