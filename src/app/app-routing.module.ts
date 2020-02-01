@@ -7,7 +7,6 @@ import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
 import { UserpageComponent } from './userpage/userpage.component';
-import { RegisterComponent } from './register/register.component';
 
 
 
@@ -17,7 +16,6 @@ const routes: Routes = [
   { path: 'game-display', component: GameDisplayComponent},
   { path: 'login', component: LoginComponent },
   { path: 'user', component: UserpageComponent},
-  { path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({
