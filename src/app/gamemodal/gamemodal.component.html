@@ -6,7 +6,7 @@
   <div class="modal-body">
     <img id="headerImage" src={{game.background_image}} alt="header image">
     <p>Release date: {{game.released}}</p>
-    <p>Metacritic score: {{game.metacritic}}</p>
+    <p *ngIf="game.metacritic">Metacritic score: {{game.metacritic}}</p>
     <div innerHTML="{{game.description}}"></div>
     <h4>Similar Games</h4>
     <div *ngFor="let similarGame of similarGames">
