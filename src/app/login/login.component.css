@@ -16,6 +16,7 @@
 .login p {
   margin-top: 0;
   margin-bottom: 0;
+  opacity: 1.0;
 }
 
 .login-triangle {
