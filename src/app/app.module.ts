@@ -19,6 +19,7 @@ import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
 import { GamemodalComponent } from './gamemodal/gamemodal.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { GamemodalComponent } from './gamemodal/gamemodal.component';
     GameDisplayComponent,
     LoginComponent,
     GamemodalComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
