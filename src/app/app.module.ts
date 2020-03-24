@@ -19,7 +19,6 @@ import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
 import { GamemodalComponent } from './gamemodal/gamemodal.component';
-import { FilterComponent } from './filter/filter.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -32,7 +31,6 @@ import { FooterComponent } from './footer/footer.component';
     GameDisplayComponent,
     LoginComponent,
     GamemodalComponent,
-    FilterComponent,
     HeaderComponent,
     FooterComponent,
   ],
