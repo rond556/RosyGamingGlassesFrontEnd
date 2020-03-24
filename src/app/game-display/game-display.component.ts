@@ -6,7 +6,7 @@ import { GamemodalComponent } from '../gamemodal/gamemodal.component';
 import { GamemodalService } from '../services/gamemodal.service';
 import { Game } from 'src/models/game';
 import { ApicallService } from '../services/apicall.service';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../auth/auth.service';
 
 
 

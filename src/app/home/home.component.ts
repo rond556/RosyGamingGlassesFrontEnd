@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../auth/auth.service';
 import { Router } from '@angular/router';
 import { FormsModule} from '@angular/forms';
 
@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
   }
 
   logout(){
-    this.authService.logout();
     this.router.navigateByUrl('/login');
   }
 

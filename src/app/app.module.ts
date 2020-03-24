@@ -21,6 +21,8 @@ import { LoginComponent } from './login/login.component';
 import { GamemodalComponent } from './gamemodal/gamemodal.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { RegisterSuccessComponent } from './auth/register-success/register-success.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     GamemodalComponent,
     HeaderComponent,
     FooterComponent,
+    RegisterComponent,
+    RegisterSuccessComponent,
   ],
   imports: [
     BrowserModule,
