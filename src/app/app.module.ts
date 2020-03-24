@@ -20,6 +20,7 @@ import { GameDisplayComponent } from './game-display/game-display.component';
 import { LoginComponent } from './login/login.component';
 import { GamemodalComponent } from './gamemodal/gamemodal.component';
 import { FilterComponent } from './filter/filter.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { FilterComponent } from './filter/filter.component';
     LoginComponent,
     GamemodalComponent,
     FilterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
