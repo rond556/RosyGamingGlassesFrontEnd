@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RegisterPayload } from '../register-payload';
 import { AuthService } from '../auth.service';
 
@@ -17,7 +17,7 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       username: '',
       email: '',
-      password: '',
+      password: ['', [Validators.required]],
       confirmPassword: ''
     });
     this.registerPayload = {
@@ -37,10 +37,14 @@ export class RegisterComponent implements OnInit {
     this.registerPayload.password = this.registerForm.get("password").value;
     this.registerPayload.confirmPassword = this.registerForm.get("confirmPassword").value;
 
-    this.authService.register(this.registerPayload).subscribe(data => {
-      console.log("Register success"), error =>
-      console.log("Register failed");
-    });
+    if(this.registerPayload.password == this.registerPayload.confirmPassword){
+      this.authService.register(this.registerPayload).subscribe(data => {
+        console.log("Register success"), error =>
+        console.log("Register failed");
+      });
+    } else {
+    console.log("Passwords do not match");
+    }
   }
 
 }
