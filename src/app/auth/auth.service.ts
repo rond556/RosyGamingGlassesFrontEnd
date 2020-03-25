@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Profile } from 'src/models/profile';
 import { HttpClient } from '@angular/common/http';
 import { RegisterPayload } from './register-payload';
 import { Observable } from 'rxjs';
@@ -9,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
   birthyear: number;
-  private url = 'http://localhost:8080/';
+  private url = 'http://localhost:8080/api/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
