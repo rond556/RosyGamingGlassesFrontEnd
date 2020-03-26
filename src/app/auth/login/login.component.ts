@@ -92,6 +92,7 @@ onSubmit(){
   this.authService.login(this.loginPayload).subscribe(data => {
     if(data){
       console.log("Login Success")
+      this.router.navigateByUrl('/home');
     } else {
       console.log("Login Failed")
     }
