@@ -17,12 +17,14 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { GameDisplayComponent } from './game-display/game-display.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/login/login.component';
 import { GamemodalComponent } from './gamemodal/gamemodal.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { RegisterSuccessComponent } from './auth/register-success/register-success.component';
+import { Ng2Webstorage } from 'ngx-webstorage';
+
 
 
 @NgModule({
@@ -46,6 +48,7 @@ import { RegisterSuccessComponent } from './auth/register-success/register-succe
     FlexLayoutModule,
     FormsModule, 
     ReactiveFormsModule,
+    Ng2Webstorage,
     AgGridModule.withComponents([]),
     NgbModule
   ],
